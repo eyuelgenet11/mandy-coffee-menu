@@ -63,8 +63,8 @@
 }
 
 .logoCircle {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,6 +73,7 @@
   overflow: hidden;
   background: #000000;
   flex-shrink: 0;
+  padding: 10px;
   box-shadow: 0 0 15px rgba(27, 48, 34, 0.6); /* Subtle Forest Green glow */
 }
 
