@@ -196,6 +196,18 @@ export default function Home() {
         </motion.div>
 
         <div className={styles.headerActions}>
+          <button 
+            className={`${styles.viewToggle} ${viewMode === 'list' ? styles.viewToggleActive : ''}`}
+            onClick={() => setViewMode(prev => prev === 'grid' ? 'list' : 'grid')}
+            title="Toggle View"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="3" y="3" width="7" height="7" rx="1" />
+              <rect x="14" y="3" width="7" height="7" rx="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <rect x="14" y="14" width="7" height="7" rx="1" />
+            </svg>
+          </button>
           <div className={styles.langSelector}>
             <button 
               className={styles.langToggle} 
@@ -278,18 +290,6 @@ export default function Home() {
             </div>
           </nav>
 
-          <button 
-            className={`${styles.viewToggle} ${viewMode === 'list' ? styles.viewToggleActive : ''}`}
-            onClick={() => setViewMode(prev => prev === 'grid' ? 'list' : 'grid')}
-            title="Toggle View"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <rect x="3" y="3" width="7" height="7" rx="1" />
-              <rect x="14" y="3" width="7" height="7" rx="1" />
-              <rect x="3" y="14" width="7" height="7" rx="1" />
-              <rect x="14" y="14" width="7" height="7" rx="1" />
-            </svg>
-          </button>
         </div>
       </header>
       
