@@ -494,11 +494,11 @@ export default function Home() {
                   <>
                     <div className={styles.inputGroup}>
                       <label>{t.name}</label>
-                      <input type="text" required placeholder="John Doe" />
+                      <input type="text" required placeholder="Abebe" />
                     </div>
                     <div className={styles.inputGroup}>
                       <label>{t.email} ({lang === 'en' ? 'Optional' : 'አማራጭ'})</label>
-                      <input type="email" placeholder="john@example.com" />
+                      <input type="email" placeholder="abebe@gmail.com" />
                     </div>
                     <div className={styles.inputGroup}>
                       <label>{t.message}</label>
